@@ -1,0 +1,103 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "09d09efb-a348-479b-8d95-14360e3a7fee",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "schema = {\n",
+    "    'node': {\n",
+    "        'type': 'dict',\n",
+    "        'schema': {\n",
+    "            'id': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "            'lat': {'required': True, 'type': 'float', 'coerce': float},\n",
+    "            'lon': {'required': True, 'type': 'float', 'coerce': float},\n",
+    "            'user': {'required': True, 'type': 'string'},\n",
+    "            'uid': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "            'version': {'required': True, 'type': 'string'},\n",
+    "            'changeset': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "            'timestamp': {'required': True, 'type': 'string'}\n",
+    "        }\n",
+    "    },\n",
+    "    'node_tags': {\n",
+    "        'type': 'list',\n",
+    "        'schema': {\n",
+    "            'type': 'dict',\n",
+    "            'schema': {\n",
+    "                'id': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "                'key': {'required': True, 'type': 'string'},\n",
+    "                'value': {'required': True, 'type': 'string'},\n",
+    "                'type': {'required': True, 'type': 'string'}\n",
+    "            }\n",
+    "        }\n",
+    "    },\n",
+    "    'way': {\n",
+    "        'type': 'dict',\n",
+    "        'schema': {\n",
+    "            'id': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "            'user': {'required': True, 'type': 'string'},\n",
+    "            'uid': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "            'version': {'required': True, 'type': 'string'},\n",
+    "            'changeset': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "            'timestamp': {'required': True, 'type': 'string'}\n",
+    "        }\n",
+    "    },\n",
+    "    'way_nodes': {\n",
+    "        'type': 'list',\n",
+    "        'schema': {\n",
+    "            'type': 'dict',\n",
+    "            'schema': {\n",
+    "                'id': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "                'node_id': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "                'position': {'required': True, 'type': 'integer', 'coerce': int}\n",
+    "            }\n",
+    "        }\n",
+    "    },\n",
+    "    'way_tags': {\n",
+    "        'type': 'list',\n",
+    "        'schema': {\n",
+    "            'type': 'dict',\n",
+    "            'schema': {\n",
+    "                'id': {'required': True, 'type': 'integer', 'coerce': int},\n",
+    "                'key': {'required': True, 'type': 'string'},\n",
+    "                'value': {'required': True, 'type': 'string'},\n",
+    "                'type': {'required': True, 'type': 'string'}\n",
+    "            }\n",
+    "        }\n",
+    "    }\n",
+    "}\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a32f5610-e9c0-478e-a786-780c542c57f4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
